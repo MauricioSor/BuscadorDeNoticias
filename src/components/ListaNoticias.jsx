@@ -3,7 +3,7 @@ import Noticias from './Noticias'
 const ListaNoticas = ({noticia}) => {
     console.log(noticia);
     return (
-        <div className='border mx-3 d-flex justify-content-center'>
+        <div className='border mx-3'>
         <Noticias noticia={noticia}></Noticias>
         </div>
     );

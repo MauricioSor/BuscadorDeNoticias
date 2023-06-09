@@ -8,10 +8,10 @@ const Formulario = () => {
     const consultaDeAPI = async (e) => {
         try {
             let url = '';
-            if (e && e.target.value !== 'Todas') {
-                url = `https://newsapi.org/v2/everything?q=${e.target.value}&sources=bbc-news&apiKey=1b0e0dea605e49b2a2093ff503a3c236`;
+            if (e && e.target.value !== 'general') {
+                url = `https://newsdata.io/api/1/news?apikey=pub_24074bc4b36bc5fc96f3342bf4006ed1ffc3c&category=${e.target.value}&language=es`;
             } else {
-                url = 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=1b0e0dea605e49b2a2093ff503a3c236';
+                url = 'https://newsdata.io/api/1/news?apikey=pub_24074bc4b36bc5fc96f3342bf4006ed1ffc3c&country=us&language=es';
             }
 
             const consulta = await fetch(url);
@@ -33,10 +33,12 @@ const Formulario = () => {
             <div className='conmtainer  d-flex justify-content-center my-3'>
                 <h3>Buscar por categoria</h3>
                 <Form.Select onChange={consultaDeAPI} aria-label="Default select example">
-                    <option>Todas</option>
-                    <option value="Economy">Economia</option>
-                    <option value="Bitcoin">Bitcoin</option>
-                    <option value="Apple">Apple</option>
+                    <option value='general'>Ingrese Categoria...</option>
+                    <option value="health">Salud</option>
+                    <option value="business">Negocios</option>
+                    <option value="science">Ciencia</option>
+                    <option value="sports">Deporte</option>
+                    <option value="technology">Tecnolgia</option>
                 </Form.Select>
             </div>
             <ListaNoticias noticia={noticia}></ListaNoticias>
