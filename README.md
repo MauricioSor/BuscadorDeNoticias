@@ -12,7 +12,10 @@
 - CSS3
 - HTML
 
-## Please . If you like this project give me a star to know it 🌟🤩 
+## API Documentation
+- [NewsData](https://newsdata.io/)
+
+## If you like this project give me a star to know it 🌟🤩 
 ## Thanks!! 
 ## Author 🙋‍♂️ 
 [Mauricio Soria](https://github.com/MauricioSor)
