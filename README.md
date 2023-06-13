@@ -1,10 +1,10 @@
-# Buscador de Noticas -React- Promesas asincronas con API  (APIS)📚 
+# Buscador de Noticas React- Promesas asincronas con API  (APIS)📚 
 
 ## Own project . Rolling Code's homework to learn about React .
 
 ## How to clone this repository:
 1. open the git bash console or open the console inside of your favourite IDE .
-2. Paste " ``` git clone  https://github.com/MauricioSor/Clima-React.git ``` "
+2. Paste " ``` git clone  https://github.com/MauricioSor/BuscadorDeNoticias.git ``` "
 
 ## Tecnologies 📚 // Tools 🛠️
 - [React-Bootstrap](https://react-bootstrap.github.io/)
